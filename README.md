@@ -21,9 +21,9 @@
 
 <div align="center">
   <img src="flutter_01.png" width="200" alt="Home Screen - Empty State"/>
-  <img src="flutter_02.png" width="200" alt="File Picker"/>
-  <img src="flutter_03.png" width="200" alt="Home Screen - With Documents"/>
   <img src="flutter_04.png" width="200" alt="Search Functionality"/>
+  <img src="flutter_02.png" width="200" alt="File Picker"/>
+  <img src="flutter_03.png" width="200" alt="Home Screen - With Documents"/>  
 </div>
 
 <div align="center">
@@ -37,6 +37,7 @@
 ## ✨ Features
 
 ### 📱 **Core Features**
+
 - **📂 PDF File Selection**: Seamlessly pick PDF files from anywhere on your device using the native file picker
 - **📄 Recent Documents**: Smart tracking of recently opened PDFs with automatic cleanup of missing files
 - **💾 Reading Progress**: Automatically saves and restores your reading position for each document
@@ -44,6 +45,7 @@
 - **📊 Document Management**: Sort documents by name, date, or size
 
 ### 🎯 **PDF Viewer Features**
+
 - **📖 Smooth Navigation**: Swipe between pages or use navigation controls
 - **🎯 Page Jumping**: Quick jump to any specific page number
 - **📏 Page Information**: Always see current page and total page count
@@ -52,6 +54,7 @@
 - **🔄 Auto-Resume**: Returns to your last read page when reopening documents
 
 ### 🎨 **UI/UX Features**
+
 - **✨ Modern Design**: Clean, Material Design-inspired interface
 - **📱 Responsive Layout**: Adapts beautifully to different screen sizes
 - **🎭 Compact Cards**: Optimized document cards with essential information
@@ -71,7 +74,7 @@ Built with **Clean Architecture** principles, ensuring maintainable and scalable
 ├── 🚀 main.dart                 # App entry point
 ├── 📊 models/                   # Data models
 │   └── pdf_document.dart        # PDF document model with formatting
-├── 🔧 services/                 # Business logic services  
+├── 🔧 services/                 # Business logic services
 │   ├── storage_service.dart     # SharedPreferences management
 │   └── file_service.dart        # File operations & validation
 ├── 🎮 controllers/              # State management (ChangeNotifier)
@@ -91,25 +94,27 @@ Built with **Clean Architecture** principles, ensuring maintainable and scalable
 ## 📦 Dependencies
 
 ### **Core Dependencies**
+
 ```yaml
 dependencies:
   flutter: sdk: flutter
-  
+
   # PDF viewing
   flutter_pdfview: ^1.3.2      # High-performance PDF rendering
-  
+
   # File handling
   file_picker: ^8.0.7          # Native file picker integration
   path_provider: ^2.1.4        # System path access
-  
+
   # Storage
   shared_preferences: ^2.3.2   # Local data persistence
-  
+
   # UI
   cupertino_icons: ^1.0.8      # iOS-style icons
 ```
 
 ### **Dev Dependencies**
+
 ```yaml
 dev_dependencies:
   flutter_test: sdk: flutter
@@ -121,6 +126,7 @@ dev_dependencies:
 ## 🚀 Installation & Setup
 
 ### **Prerequisites**
+
 - Flutter SDK (3.8.1 or higher)
 - Dart SDK (3.0 or higher)
 - Android Studio / VS Code
@@ -129,26 +135,30 @@ dev_dependencies:
 ### **Quick Start**
 
 1. **📥 Clone the repository**
+
    ```bash
    git clone <repository-url>
    cd pdf_viewer_app
    ```
 
 2. **📦 Install dependencies**
+
    ```bash
    flutter pub get
    ```
 
 3. **🔧 Check setup**
+
    ```bash
    flutter doctor
    ```
 
 4. **🚀 Run the app**
+
    ```bash
    # Debug mode
    flutter run
-   
+
    # Release mode
    flutter run --release
    ```
@@ -170,30 +180,33 @@ flutter build ios --release
 
 ## 🌍 Platform Support
 
-| Platform | Status | Features |
-|----------|--------|---------|
+| Platform       | Status          | Features                                         |
+| -------------- | --------------- | ------------------------------------------------ |
 | 📱 **Android** | ✅ Full Support | All features, native file picker, storage access |
-| 🍎 **iOS** | ✅ Full Support | All features, document picker integration |
-| 🌐 **Web** | ⚠️ Limited | File picker works, PDF viewing limited |
-| 🖥️ **Desktop** | ⚠️ Partial | Basic functionality, file system access |
+| 🍎 **iOS**     | ✅ Full Support | All features, document picker integration        |
+| 🌐 **Web**     | ⚠️ Limited      | File picker works, PDF viewing limited           |
+| 🖥️ **Desktop** | ⚠️ Partial      | Basic functionality, file system access          |
 
 ---
 
 ## ⚡ Technical Highlights
 
 ### **🎮 State Management**
+
 - **Pattern**: ChangeNotifier with Provider pattern
 - **Controllers**: Separate controllers for different features
 - **Reactive UI**: Automatic UI updates on state changes
 - **Memory Management**: Proper disposal of resources
 
 ### **🛡️ Error Handling**
+
 - **Comprehensive**: File operations, permissions, and PDF loading
 - **User-Friendly**: Clear error messages and recovery options
 - **Graceful Degradation**: Handles missing files and corrupted PDFs
 - **Permission Management**: Smart permission handling with user guidance
 
 ### **🚀 Performance Optimizations**
+
 - **Efficient Rendering**: Optimized PDF view with flutter_pdfview
 - **Lazy Loading**: Documents loaded on-demand
 - **Memory Management**: Proper cleanup of large PDF files
@@ -201,6 +214,7 @@ flutter build ios --release
 - **Compact UI**: Optimized card design for better performance
 
 ### **🔒 Security & Privacy**
+
 - **Local Storage**: All data stored locally on device
 - **No Cloud**: No data transmitted to external servers
 - **Permission Aware**: Minimal required permissions
@@ -211,6 +225,7 @@ flutter build ios --release
 ## 🎯 User Experience Enhancements
 
 ### **Recent Updates**
+
 - ✅ **Compact Card Design**: Reduced padding and optimized spacing
 - ✅ **Enhanced Menu**: Better three-dot menu with improved visibility
 - ✅ **Smart Layout**: Page info moved below file size for better UX
@@ -218,6 +233,7 @@ flutter build ios --release
 - ✅ **Error Handling**: Improved error messages and user guidance
 
 ### **Key UX Decisions**
+
 - **Minimal Clicks**: Quick access to recently opened documents
 - **Visual Hierarchy**: Important information prominently displayed
 - **Consistent Design**: Material Design principles throughout
@@ -229,6 +245,7 @@ flutter build ios --release
 ## 🔮 Future Enhancements
 
 ### **Planned Features**
+
 - 🔍 **Text Search**: Search within PDF content
 - 🔖 **Bookmarks**: Save and organize bookmarks
 - 📤 **Share**: Share PDFs with other apps
@@ -239,6 +256,7 @@ flutter build ios --release
 - 📊 **Reading Stats**: Track reading time and progress
 
 ### **Technical Roadmap**
+
 - 🏗️ **Bloc Integration**: Migrate to Bloc for complex state management
 - 🧪 **Testing**: Comprehensive unit and widget tests
 - 🚀 **CI/CD**: Automated testing and deployment
@@ -264,6 +282,7 @@ flutter build ios --release
 Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
 
 ### **Development Guidelines**
+
 - Follow Flutter/Dart style guidelines
 - Maintain clean architecture principles
 - Add tests for new features
